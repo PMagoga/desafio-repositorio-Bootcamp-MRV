@@ -1,0 +1,18 @@
+Esse comando cria um repositório vazio ou transforma uma pasta que você já tem, e que não está com controle de versão, em um repositório.
+
+git init
+
+O Git clone é um comando para baixar o código-fonte existente de um repositório remoto (como o Github, por exemplo).
+Existem algumas maneiras de baixar o código-fonte, mas eu prefiro o clone com o modo https:
+
+git clone <url....>
+
+Com branches (ou ramificações), vários desenvolvedores podem trabalhar paralelamente no mesmo projeto. Assim, cada um pode codar a sua parte sem se atrapalharem.
+Por isso, esse é um dos comandos Git mais importantes. Pode-se usar o comando git branch para criar, listar e excluir branches.
+Criando uma nova branch:
+
+git branch <nome da branch>
+
+Este comando criará uma branch local. Para upar a nova branch para o repositório remoto, você precisa usar o seguinte comando:
+
+git push -u <remote> <nome da branch>
